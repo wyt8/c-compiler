@@ -24,11 +24,6 @@ BISON_TARGET(MyParser parser.y ${CMAKE_CURRENT_BINARY_DIR}/parser.cpp)
 FLEX_TARGET(MyScanner token.l ${CMAKE_CURRENT_BINARY_DIR}/token.cpp)  
 ADD_FLEX_BISON_DEPENDENCY(MyScanner MyParser)
 
-# 添加编译选项  
-# add_compile_options(-pedantic) 
-# add_compile_options(-fsanitize=address) 
-# add_link_options(-fsanitize=address) 
-
 # 添加可执行文件  
 add_executable(Compilerlab4
     ${BISON_MyParser_OUTPUTS}  
@@ -38,7 +33,4 @@ add_executable(Compilerlab4
 )  
   
 # 设置C++标准  
-target_compile_features(Compilerlab4 PRIVATE cxx_std_14)  
-  
-# 如果需要链接到Bison和Flex库（这取决于您的设置）  
-# target_link_libraries(Compilerlab3 PRIVATE bison flex)
+target_compile_features(Compilerlab4 PRIVATE cxx_std_14)
