@@ -6,14 +6,6 @@
 #include <cstdio>
 
 #include "global.h"
-
-// Table<std::string> identifierTable; // 标识符表
-
-// int getEbpOffset(const std::string &name)
-// {
-//     return (identifierTable.add(name) + 1) * 4;
-// }
-
 #include "ASTNodes.h"
 
 using namespace std;
