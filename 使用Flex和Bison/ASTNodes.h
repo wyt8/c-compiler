@@ -18,10 +18,6 @@ class NVariableDeclaration;
 typedef std::vector<std::shared_ptr<NStatement>> StatementList;
 typedef std::vector<std::shared_ptr<NExpression>> ExpressionList;
 
-// extern Table<std::string> identifierTable; // 标识符表
-
-// int getEbpOffset(const std::string &name);
-
 // 所有节点的基类
 class Node
 {
