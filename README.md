@@ -2,6 +2,8 @@
 
 该编译器将一种语法类似C语言的语句序列翻译为等价的汇编程序，所输出的汇编程序符合X86汇编语言格式要求，可以在Linux环境下正常运行。
 
+🔗[其他资源](https://github.com/wyt8/bit-cs)
+
 ## 👍最终支持的功能
 
 * 关键字：`int`、`return`、`main`、`void`、`if`、`else`、`while`、`continue`、`break`
